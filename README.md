@@ -41,7 +41,7 @@ def add(): #declaration
 
 print(100+400)
 
-# calling of add
+## calling of add
 
 add()
 
@@ -161,7 +161,7 @@ MAKE it global
 
 --------------
 
-# global a, b
+## global a, b
 
 a = 20
 
@@ -203,7 +203,7 @@ print(x)
 
 sample()
 
-# This will give u Unbound Local error
+## This will give u Unbound Local error
 
 means we are not allowed to change global value inside a local scope
 
@@ -217,7 +217,7 @@ def sample():
 
 x = 20 # local
 
-# lets try to change value of a global x
+## lets try to change value of a global x
 
 x = x + 100
 
@@ -239,7 +239,7 @@ def sample():
 
 global x # it will allows u to change global value inside a local scope
 
-# lets try to change value of a global x
+## lets try to change value of a global x
 
 x = x + 100
 
@@ -267,7 +267,7 @@ then will use a return statement/keyword
 
 If we want something to fetch outside the function from inside the function then use return
 
-# when no return
+## when no return
 
 def sample():
 
@@ -275,11 +275,11 @@ pass
 
 print(sample())
 
-# It returns None when no return
+## It returns None when no return
 
 ------------------------
 
-# when return is given
+## when return is given
 
 def sample():
 
@@ -287,7 +287,7 @@ return 'Pooja'
 
 print(sample())
 
-# It returns specified things along with calling
+## It returns specified things along with calling
 
 ==============================
 
@@ -295,11 +295,11 @@ General example:
 
 print(print(45))
 
-# print doesnt have return==> None
+## print doesnt have return==> None
 
 print(id(45))
 
-# id returns an address of an object
+## id returns an address of an object
 
 print(help(id))
 
@@ -311,11 +311,11 @@ def add():
 
 return 100 + 500
 
-# addition performed inside
+## addition performed inside
 
 print(add())
 
-# Using return result we r getting outside a function
+## Using return result we r getting outside a function
 
 ==============================
 
@@ -327,11 +327,11 @@ def add():
 
 return 100 + 500
 
-# addition performed inside
+## addition performed inside
 
 print(add())
 
-#2
+##2
 
 result = add()
 
@@ -377,7 +377,7 @@ return a+b,a-b,a*b,a/b
 
 print(sample())
 
-# unpack the results
+## unpack the results
 
 add,sub,mul,div = sample()
 
@@ -395,7 +395,7 @@ return a+b,a-b,a*b,a/b
 
 print(sample())
 
-# unpack the results
+## unpack the results
 
 add,sub,mul,div = sample()
 
@@ -405,7 +405,7 @@ Function with parameters
 
 def sample(a):
 
-# a is a parameter/ an argument
+## a is a parameter/ an argument
 
 print(a)
 
@@ -431,15 +431,15 @@ print(c)
 
 sample(1,2,3)
 
-# Rule: in declaration if we have 3 args then u must supply 3 values
+## Rule: in declaration if we have 3 args then u must supply 3 values
 
-# Rule: when we supply direct values these values are positional one
+## Rule: when we supply direct values these values are positional one
 
 sample('A','B','C')
 
 sample('depali','pune',411011)
 
-# in values we can supply any type of data
+## in values we can supply any type of data
 
 =========================
 
@@ -469,13 +469,13 @@ print('place:',place)
 
 info('Saurabh',30,'Satara')
 
-# but if we change sequence then???
+## but if we change sequence then???
 
 info(21,'Seema','Latur')
 
-# in above case positional arg create a problem
+## in above case positional arg create a problem
 
-# as we are not following a sequence
+## as we are not following a sequence
 
 ==========================================
 
@@ -493,7 +493,7 @@ print('place:',place)
 
 info('Saurabh',30,'Satara')
 
-# now we r taking help of arguments itself to allocate values properly
+## now we r taking help of arguments itself to allocate values properly
 
 info(age=21,name='Seema',place='Latur')
 
@@ -517,9 +517,9 @@ info('Ganesh','Kolhapur')
 
 =====================
 
-# When non-default argument follows default argument
+## When non-default argument follows default argument
 
-# its not allowed as per suntax
+## its not allowed as per suntax
 
 def info(place='Maharashtra',name):
 
@@ -535,11 +535,11 @@ def show(p,q,r=400):
 
 print(p,q,r)
 
-# in above case p,q are positional args
+## in above case p,q are positional args
 
-# r is default arg.
+## r is default arg.
 
-# so r should always follow p,q
+## so r should always follow p,q
 
 show(10,20)
 
@@ -549,11 +549,11 @@ def show(r=400,p,q): #not allowed
 
 print(p,q,r)
 
-# in above case p,q are positional args
+## in above case p,q are positional args
 
-# r is default arg.
+## r is default arg.
 
-# so r should always follow p,q
+## so r should always follow p,q
 
 show(10,20)
 
@@ -788,13 +788,13 @@ print(square(10))
 
 -------------------------------------
 
-# Using lambda function
+## Using lambda function
 
 sq = lambda num:num*num
 
 print(sq(25))
 
-# lambda function has default return statement
+## lambda function has default return statement
 
 print(square)
 
@@ -804,19 +804,19 @@ print(sq)
 
 Example:
 
-# positional args
+## positional args
 
 add = lambda x,y:x+y
 
 print(add(1,2))
 
-# keyword args
+## keyword args
 
 sub = lambda x,y:x-y
 
 print(sub(y=100,x=200))
 
-# default arg
+## default arg
 
 conv = lambda nm='Guest':nm.upper()
 
